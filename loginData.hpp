@@ -16,24 +16,23 @@ class loginData
     
     
     
-    vector<string> usernameSignin;
-    vector<string> passwordSignin;
+    vector<string> usernameSignin; // store the collection of username
+    vector<string> passwordSignin; // store the collection of password
     
     
 public:
-    int accountIndex;
-    vector<string> scoreSignin;
+    int accountIndex; // store the position of account
+    vector<string> scoreSignin; // store the collection of score
     bool loginStatus{false}; //represent login status
-    vector<string> userData;
-    loginData(); // this function is non function for now
+    loginData(); // this function is non functional for now
     ~loginData();
     
     void signin(); // function to signin
-    int login();
-    void readUsername();
-    void readPassword();
-    void readScore();
-    void updateScore(vector<string> score);
+    int login(); // function to login
+    void readUsername(); // read username on database and push it into private vector<string> usernameSignin;
+    void readPassword(); // read username on database and push it into private vector<string> passwordSignin;
+    void readScore(); // read username on database and push it into public vector<string> scoreSignin;
+    void updateScore(vector<string> score);// update score
 };
 
 #endif // LOGINDATA_HPP

@@ -47,23 +47,14 @@ void loginData::signin()
     cout << "Make a new account \n";
     cout << "Username : ";
     cin >> username;
-    userData.push_back(username);
     cout << "Password : ";
     cin >> password;
-    userData.push_back(password);
-    userData.push_back(score);
-    
-    int vecSize = userData.size();
     fstream userSignIn;
     
     userSignIn.open(fname, fstream::app);
-    for(int i = 0; i < vecSize; i++)
-    {
-        userSignIn << userData[i] << delimiter;
-    }
+    userSignIn << username << delimiter << password << delimiter << score << delimiter;
     userSignIn << "\n";
     userSignIn.close();
-    userData.clear();
 }
 
 void loginData::readUsername()
