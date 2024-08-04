@@ -58,39 +58,6 @@ int main(int argc, char **argv)
 {
     loginData user;
     
-    
-    /*char* choice;
-    if(argc > 0)
-    {
-        
-        choice = argv[1];
-        
-       if(std::strcmp("--signin", choice) == 0)
-       {
-           cout << "Sign In Loading ..." << endl;
-           user.signInData();
-           return 0;
-       }
-       if(std::strcmp("--readusername", choice) == 0)
-       {
-           cout << "Reading Database.. " << endl;
-           user.readUsername();
-           return 0;
-       }
-       if(std::strcmp("--readpass", choice) == 0)
-       {
-           cout << "Reading Database.. " << endl;
-           user.readPassword();
-           return 0;
-       }
-       if(std::strcmp("--readscore", choice) == 0)
-       {
-           cout << "Reading Database.. " << endl;
-           user.readScore();
-           return 0;
-       }
-    }*/
-    
     cout << "Welcome into HiLoJudol\n";
     cout << "Are you new?? ";
     std::string choice;
