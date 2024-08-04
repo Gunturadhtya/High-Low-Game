@@ -102,7 +102,6 @@ int main(int argc, char **argv)
                 break;
         }
     }
-    // TODO: ADD A HIGH LOW GAME AND CALCULATE IT SCORE
     
     
     
